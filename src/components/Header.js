@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom"
 import { animate, AnimatePresence, motion } from "framer-motion";
 import { HashLink, NavHashLink } from "react-router-hash-link"
 import { FaGithub } from "react-icons/fa";
@@ -21,15 +20,11 @@ export default function Header(props) {
     };
 
     const navIcon = {
-        // initial: { scale: 1 },
-        // animate: { scale: 2 }
         initial: { width: "2rem", height: '1px', backgroundColor: "#94a3b8" },
         animate: { width: '4rem', height: '1.5px', backgroundColor: "#f8fafc" }
     }
 
     const navText = {
-        // initial: { scale: 1 },
-        // animate: { scale: 2 }
         initial: { color: "#94a3b8" },
         animate: { color: "#f8fafc" }
     }
@@ -70,7 +65,6 @@ export default function Header(props) {
                                         className="inline-flex items-center cursor-pointer"
                                     >
                                         <motion.div
-                                            // whileHover={{ scale: 1.2 }}
                                             variants={navIcon}
                                             className="bg-bg2 h-px w-8 mr-3"
                                         ></motion.div>
@@ -92,7 +86,6 @@ export default function Header(props) {
                                         className="inline-flex items-center cursor-pointer"
                                     >
                                         <motion.div
-                                            // whileHover={{ scale: 1.2 }?}
                                             variants={navIcon}
                                             className="bg-bg2 h-px w-8 mr-3"
                                         ></motion.div>
@@ -113,7 +106,6 @@ export default function Header(props) {
                                         className="inline-flex items-center cursor-pointer"
                                     >
                                         <motion.div
-                                            // whileHover={{ scale: 1.2 }?}
                                             variants={navIcon}
                                             className="bg-bg2 h-px w-8 mr-3"
                                         ></motion.div>
@@ -135,6 +127,4 @@ export default function Header(props) {
             )}
         </AnimatePresence>
     )
-
-
 }

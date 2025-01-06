@@ -41,21 +41,27 @@ module.exports = {
         'sectionMt': '3.5rem',
         'eachExperienceMargin': '2rem',
         'marginTopForTheTagsDiv': '1rem',
-        
       },
       height: {
         'h3ContainerHeight': '4rem'
       },
       fontSize: {
-        'tagsFontSize': '0.75rem',
-        'discoverFontSize': '10rem',
-        'paragraphFontSize': '1.25rem',
-        'headerFontSize': '1.5rem',
-        'h1FontSize': '2.5rem',
-        'h2FontSize': '2rem',
-        'headerParagraphFontSize': '1.4rem',
-        'navFontSize': '1.15rem' 
-      
+        'tagsFontSize': ['0.75rem', { lineHeight: '1rem' }],
+        'discoverFontSize': ['10rem', { lineHeight: '1' }],
+        'paragraphFontSize': ['1.25rem', { lineHeight: '1.75rem' }],
+        'headerFontSize': ['1.5rem', { lineHeight: '2rem' }],
+        'h1FontSize': ['2.5rem', { lineHeight: '3rem' }],
+        'h2FontSize': ['2rem', { lineHeight: '2.5rem' }],
+        'headerParagraphFontSize': ['1.4rem', { lineHeight: '2rem' }],
+        'navFontSize': ['1.15rem', { lineHeight: '1.5rem' }],
+        'responsiveFontSize': {
+          'ssm': '0.875rem', // 14px
+          'sm': '1rem', // 16px
+          'md': '1.125rem', // 18px
+          'lg': '1.25rem', // 20px
+          'xl': '1.5rem', // 24px
+          '2xl': '1.875rem', // 30px
+        }
       },
     },
   },

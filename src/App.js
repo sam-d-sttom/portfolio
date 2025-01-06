@@ -11,8 +11,6 @@ function App() {
 
   return (
     <div className=" bg-bg text-primaryTextColor 2xl:p-24 xl:p-24 lg:p-20 lg:flex-row md:p-16 sm:p-14 ssm:p-6 ssm:flex ssm:justify-between ssm:flex-col text-paragraphFontSize leading-normal">
-      {/* <Header />
-      <Main /> */}
 
       {
         !introduction && <Header introduction={introduction}/>
