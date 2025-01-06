@@ -2,8 +2,8 @@
 
 export default function About() {
     return (
-        <section id="about">
-            <div id="h3Container" className="opacity-95 bg-bg mb-h3ContainerMb lg:hidden sticky top-0 h-h3ContainerHeight flex items-center text-secondaryTextColor">
+        <section id="about" className="text-paragraphFontSize">
+            <div id="h3Container" className="opacity-95 bg-bg mb-h3ContainerMb lg:hidden sticky top-0 h-h3ContainerHeight flex items-center text-secondaryTextColor ">
                 <h3 className="font-extrabold">ABOUT</h3>
             </div>
             <p className="mb-4">

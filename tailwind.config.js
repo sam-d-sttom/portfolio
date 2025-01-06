@@ -25,6 +25,7 @@ module.exports = {
     },
     colors: {
       'bg': '#0f172a',
+      'black': '#000000',
       'bg2': '#94a3b8',
       'bgTest': '#cbd5e1',
       'bgTestRed': '#ef4444',
@@ -46,8 +47,16 @@ module.exports = {
         'h3ContainerHeight': '4rem'
       },
       fontSize: {
-        'tagsFontSize': '0.75rem'
-      }
+        'tagsFontSize': '0.75rem',
+        'discoverFontSize': '10rem',
+        'paragraphFontSize': '1.25rem',
+        'headerFontSize': '1.5rem',
+        'h1FontSize': '2.5rem',
+        'h2FontSize': '2rem',
+        'headerParagraphFontSize': '1.4rem',
+        'navFontSize': '1.15rem' 
+      
+      },
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@ export default function Experience() {
                 <h3 className="font-extrabold text-secondaryTextColor">EXPERIENCE</h3>
             </div>
             <div className="mb-eachExperienceMargin flex justify-between lg:flex-row ssm:flex-col ">
-                <div> 2023 - 2024 </div>
+                <div> 2023 - Present </div>
                 <div className="lg:w-4/6 ssm:w-6/6">
                     <h4 className="font-extrabold">Junior Developer At SOPDAP Technologies (IT Solutions)</h4>
                     <p>Delivered comprehensive IT solutions through the development of robust full-stack applications, leveraging HTML5, CSS3, JavaScript, React, Laravel, jQuery, and WordPress (PHP). Collaborated closely with Business Analysts and Solutions Architects to implement software solutions that consistently met all project requirements and business objectives.</p>
