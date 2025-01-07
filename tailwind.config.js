@@ -49,9 +49,12 @@ module.exports = {
         'tagsFontSize': ['0.75rem', { lineHeight: '1rem' }],
         'discoverFontSize': ['10rem', { lineHeight: '1' }],
         'paragraphFontSize': ['1.25rem', { lineHeight: '1.75rem' }],
+        'welcomeParagraphFontSize': ['1rem', { lineHeight: '1.75rem' }],
         'headerFontSize': ['1.5rem', { lineHeight: '2rem' }],
         'h1FontSize': ['2.5rem', { lineHeight: '3rem' }],
+        'h1FontSizeSsm': ['1.8rem', { lineHeight: '3rem' }],
         'h2FontSize': ['2rem', { lineHeight: '2.5rem' }],
+        'h2FontSizeSsm': ['1.5rem', { lineHeight: '2.5rem' }],
         'headerParagraphFontSize': ['1.4rem', { lineHeight: '2rem' }],
         'navFontSize': ['1.15rem', { lineHeight: '1.5rem' }],
         'responsiveFontSize': {

@@ -129,29 +129,44 @@ const Welcome = (props) => {
         }
     };
 
+    // getting the view port width each time the user resizes the window.
+    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setViewportWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [viewportWidth]);
+
     return (
         <AnimatePresence>
             {introduction && (
-                <motion.div className="absolute top-0 left-0 right-0 bottom-0 flex items-center px-[2vw]"
+                <motion.div className="absolute top-0 left-0 right-0 bottom-0 flex items-center md:px-[2vw] ssm:px-[7vw]"
                     exit={{ opacity: 0, }}
                     transition={{ duration: 2 }}
                 >
 
-                    <div className="w-full h-2/4 relative ">
+                    <div className="w-full md:h-2/4 ssm:h-3/4 relative ">
 
                         <motion.div className=""
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ 
+                            transition={{
                                 duration: 4,
                                 delay: 3
-                             }}
+                            }}
                         >
-                            <h1 className="text-secondaryTextColor mb-3 font-extrabold text-h1FontSize">OYEBANJI OLUWATOMISIN</h1>
-                            <h2 className="text-secondaryTextColor font-medium mb-4 text-h2FontSize">Software Engineer</h2>
+                            <h1 className="text-secondaryTextColor mb-3 font-extrabold md:text-h1FontSize ssm:text-h1FontSizeSsm">OYEBANJI OLUWATOMISIN</h1>
+                            <h2 className="text-secondaryTextColor font-medium md:mb-4 ssm:mb-20 md:text-h2FontSize ssm:text-h2FontSizeSsm">Software Engineer</h2>
                         </motion.div>
 
-                        <motion.div className="w-[80vw] text-center justify-self-center"
+                        <motion.div className="md:w-[80vw] ssm:w-[100vw] text-center justify-self-center ssm:text-welcomeParagraphFontSize"
                             variants={textDivVariant}
                             initial={displayText ? "initial" : "final"}
                             animate={displayText ? "final" : "initial"}
@@ -173,7 +188,7 @@ const Welcome = (props) => {
                                 position: 'absolute'
                             }}
                             animate={{
-                                width: '10vw',
+                                width: viewportWidth < 768 ? '40vw' : '10vw' ,
                                 right: '0%',
                                 bottom: 0,
                                 y: 0,
@@ -182,7 +197,7 @@ const Welcome = (props) => {
                             }}
                             transition={{
                                 duration: 2,
-                                delay: 4
+                                delay: 3.5
                             }}
                         >
                             <motion.path
